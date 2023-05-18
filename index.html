@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>helping hands</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
@@ -14,29 +14,14 @@
   <!-- ======================================== 
           navigation bar
     ========================================  -->
+
   <header class="background-nav">
-    <div class="header" id="sticky">
-     <div class="img"> <img src="image/logo3.jpg" alt="logo" class="logo" /> </div>
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="border"><a class="navbar-link" href="#">Home</a></li>
-          <li class="border"><a class="navbar-link" href="#about">About</a></li>
-          <li class="border"><a class="navbar-link" href="#how-it-works">How it works</a></li>
-          <li class="border"><a class="navbar-link" href="#contact">Contact us</a></li>
-          <li><a class="navbar-link" href="#"> <img src="image/d-icon65.png" alt="logo" class="d-icon" /></a></li>
-        </ul>
-      </nav>
 
-      <div class="mobile-navbar-btn">
-        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
-        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
-      </div>
-    </div>
-
+    {{>nav}}
     <!-- ======================================== 
           Our slogan section  
     ========================================  -->
-    <section class="section-hero section">
+    <section class="section-hero section" style="margin-top: 0; padding-top:6rem">
       <div class="container grid grid-one-column">
         <div class="section-hero-date">
           <h1 class="hero-heading">Helping hands</h1>
@@ -45,11 +30,12 @@
             When you give, give with your whole heart. <br>
             An act of giving is an act of huminity.
           </p>
-          <div class="hero-bg"><a href="#" class="btn donate-now-btn"><img src="image/d-icon65.png" alt="logo"
+          <div class="hero-bg"><a href="/donate" class="btn donate-now-btn"><img src="css/image/d-icon65.png" alt="logo"
                 class="d-icon" /></a></div>
         </div>
       </div>
-      <div class="container login"><button class="login-btn"><a href="#">Register/Login</a></button> </div>
+      <div class="container login" style="margin-bottom: 2rem;"><a href="/registration" style="color:white"><button
+            class="login-btn">Register/Login</a></button> </div>
     </section>
   </header>
   <!-- ======================================== 
@@ -59,20 +45,20 @@
     <section class="service section">
       <div class="container grid grid-four-column">
         <div class="service-data">
-          <img src="image/f1.jpg" alt="image" class="features-img">
-          <a href="registration.html"> <button class="service-function-buttons">FOOD BANK</button></a>
+          <img src="css/image/f1.jpg" alt="image" class="features-img">
+          <a href="/foodbank"> <button class="service-function-buttons">FOOD BANK</button></a>
         </div>
         <div class="service-data">
-          <img src="image/f3.jpg" alt="image" class="features-img">
-          <a href="registration.html"> <button class="service-function-buttons">CLOTHES</button></a>
+          <img src="css/image/f3.jpg" alt="image" class="features-img">
+          <a href="/clothes"> <button class="service-function-buttons">CLOTHES</button></a>
         </div>
         <div class="service-data">
-          <img src="image/f2.jpg" alt="image" class="features-img">
-          <a href="registration.html"><button class="service-function-buttons">MEDICAL HELP</button></a>
+          <img src="css/image/f2.jpg" alt="image" class="features-img">
+          <a href="/medicalhelp"><button class="service-function-buttons">MEDICAL HELP</button></a>
         </div>
         <div class="service-data">
-          <img src="image/f4.png" alt="image" class="features-img">
-          <a href="registration.html"> <button class="service-function-buttons">RAISE FUNDS</button> </a>
+          <img src="css/image/education 3.avif" alt="image" class="features-img">
+          <a href="/raisefunds"> <button class="service-function-buttons">Education</button> </a>
         </div>
       </div>
     </section>
@@ -98,7 +84,7 @@
             HUMANITY IS SERVICE OF THE ALMIGHTY ❤.
           </p>
         </div>
-        <div class="about-image-div"><img src="image/about.jpg" alt="image" class="about-image"></div>
+        <div class="about-image-div"><img src="css/image/about.jpg" alt="image" class="about-image"></div>
       </div>
     </section>
     </section>
@@ -110,7 +96,7 @@
     ========================================  -->
   <section class="about section" id="how-it-works">
     <div class="container grid grid-two-column abt">
-      <div class="about-image-div"><img src="image/clothes.jpg" alt="image" class="about-image"></div>
+      <div class="about-image-div"><img src="css/image/clothes.jpg" alt="image" class="about-image"></div>
       <div class="about-data">
         <h2>How it works </h2>
         <p class="heading-para">"Your Trash is someone else's Treasure"
@@ -142,11 +128,11 @@
           Please donate your mildly used winter clothes for the need..
         </p>
       </div>
-      <div class="about-image-div"><img src="image/food-for-lifewb..png" alt="image" class="about-image"></div>
+      <div class="about-image-div"><img src="css/image/food-for-lifewb..png" alt="image" class="about-image"></div>
 
     </div>
     <div class="container grid grid-two-column abt">
-      <div class="about-image-div"><img src="image/MCamp.jpg" alt="image" class="about-image"></div>
+      <div class="about-image-div"><img src="css/image/MCamp.jpg" alt="image" class="about-image"></div>
       <div class="about-data">
         <p class="heading-para">"Your Trash is someone else's Treasure"
           The organization donates clothes to the poor in orphanages or old age homes. You can also help us in this
@@ -178,7 +164,7 @@
           Please donate your mildly used winter clothes for the need..
         </p>
       </div>
-      <div class="about-image-div"><img src="image/raise-funds.jpg" alt="image" class="about-image"></div>
+      <div class="about-image-div"><img src="css/image/education 2.jpg" alt="image" class="about-image"></div>
 
     </div>
 
@@ -216,89 +202,18 @@
           <label for="textarea"></label>
           <textarea name="textarea" id="textarea" cols="20" rows="10"></textarea>
         </div>
-      <div><input type="submit" name="submit" id="submit" class="btn"></div>
+        <div><input type="submit" name="submit" id="submit" class="btn"></div>
       </form>
     </div>
   </section>
 
   </main>
+
+
   <!-- ======================================== 
           Our footer Section Start  
     ========================================  -->
-  <footer class="section-footer section">
-    <div class="container grid grid-four-column">
-      <div class="f-about">
-        <h3>About</h3>
-        <p>
-          Helping hands is non profitable charity organization.
-          Eliminating the root of problems of medical health by providing medical camps and medical needs to the needy.
-          The organization has collaborated with different hospitals and medical facilities and other NGO's to provide
-          goods to needy people.
-        </p>
-      </div>
-      <div class="f-links">
-        <h3>links</h3>
-        <ul>
-          <li><a href="#"><ion-icon name="arrow-forward-outline"></ion-icon> Home</a></li>
-          <li><a href="#about"><ion-icon name="arrow-forward-outline"></ion-icon> about</a></li>
-          <li><a href="#how-it-works"><ion-icon name="arrow-forward-outline"></ion-icon> How it works</a></li>
-          <li><a href="#contact"><ion-icon name="arrow-forward-outline"></ion-icon> Contact us</a></li>
-        </ul>
-      </div>
-      <div class="f-services">
-        <h3>services</h3>
-        <ul>
-          <li><a href="#"><ion-icon name="arrow-forward-outline"></ion-icon> Food Bank</a></li>
-          <li><a href="#"><ion-icon name="arrow-forward-outline"></ion-icon> Clothes</a></li>
-          <li><a href="#"><ion-icon name="arrow-forward-outline"></ion-icon> Medical Helps</a></li>
-          <li><a href="#"><ion-icon name="arrow-forward-outline"></ion-icon> Raise Funds</a></li>
-        </ul>
-      </div>
-      <div class="f-address">
-        <h3>Have a question?</h3>
-        <address>
-          <p>
-            <span>
-              <ion-icon name="location-outline"></ion-icon> Shimla, India
-            </span>
-          </p>
-
-          <div>
-            <p>
-              <span>
-                <ion-icon name="call-outline"></ion-icon>
-                <a href="tel:+919383129090"> 9383129090 </a>
-              </span>
-            </p>
-          </div>
-          <div>
-            <p>
-              <span>
-                <ion-icon name="mail-outline"></ion-icon> <a href="mailto:helpinghands@gmail.com">
-                  helpinghands@gmail.com
-                </a>
-              </span>
-            </p>
-          </div>
-        </address>
-      </div>
-    </div>
-    <div class="container">
-      <div class="f-icons">
-        <a href="#"><ion-icon name="logo-instagram" class="icons"></ion-icon>
-        </a>
-        <a href="#"><ion-icon name="logo-facebook" class="icons"></ion-icon>
-        </a>
-        <a href="#"><ion-icon name="logo-whatsapp" class="icons"></ion-icon>
-        </a>
-      </div>
-      <div class="f-credits">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, pariatur?
-        </p>
-      </div>
-    </div>
-  </footer>
+  {{>footer}}
 
 
   <!-- ======================================== 
